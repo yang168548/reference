@@ -1,0 +1,327 @@
+@charset 'utf-8';
+a{ 
+    text-decoration:none ;
+    color: black ;
+}
+a:hover{
+    text-decoration:none ;
+    color: black;
+}
+a:visited{
+    text-decoration:none ;
+    color: black;         
+}
+ul{
+    list-style: none;
+}
+
+.clear::after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+
+nav{
+    padding: 5px;
+    >div{
+        >div{
+            >ul{
+                font-size: 12px;
+                padding-top: 10px;
+                height: 30px;
+                >li{
+                    float: left;
+                    
+                    span{
+                            height: 15px;
+                            padding-left: 8px;
+                            padding-right: 8px;
+                            border-right:1px  dashed gainsboro;
+                        p{
+                            display: inline-block;
+                            padding-left:3px ;
+                        }
+                        span{
+                            padding:0;
+                            padding-left:3px ;
+                            border:none;
+                        }
+                        
+                    }
+                    &:nth-last-of-type(2){
+                        &:hover .title{
+                            display: block;
+                        }
+                        .title{
+                            display: none;
+                            float: right;
+                            width: 350px;
+                            margin-right:5% ;
+                            color: black;
+                            top: 25px;
+                            background-color: #fff;
+                            position: absolute;
+                            z-index: 5;
+                          /*   background-color: yellowgreen; */
+                          >span{
+                              position: absolute;
+                              border-left:8px  solid transparent;
+                              border-right:8px solid transparent;
+                              border-bottom:8px solid #ddd;
+                              top:-14px;
+                              left: 20px;
+                          }
+                            div{
+                                box-sizing: border-box;
+                                width: 330px;
+                                padding: 10px;
+                                border: 1px solid #ccc;
+                                p{
+                                    text-align: center;
+                                    font-size: 12px;
+                                    padding-left: 5px;
+                                }
+                                div{
+                                    border:none;
+                                    width: 140px;
+                                    margin: 5px;
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    >div{ 
+                        
+                        color:#ccc; 
+                        margin-left: 8px;
+                        position: relative;
+                        border:1px solid transparent;
+                        border-bottom:1px solid  black;  
+                        input{
+                            width: 200px;
+                            border:transparent;
+                            outline:none;//去掉焦点边框
+                        }
+                        span{
+                            padding: 0;
+                            border:none;
+                           
+                        }
+                    }   
+                }
+        }
+ 
+    }
+  
+}
+}
+#nav-bottom{
+    >.nav-bottom-left{
+        >ul{
+            padding: 5px;
+            padding-left:10px ;
+            >li{
+                line-height: 50px;
+                padding-right:10px;
+               p{  
+                   >a{
+                       font-size: 14px;
+                       text-align: center;
+                       height: 20px;
+                       padding-left: 8px;
+                       padding-right: 8px;
+                       border-right:1px  dashed #000;
+                       >span{
+                        letter-spacing:5px;
+                       }
+                   }
+               }
+             
+            }
+          
+        }
+        >.nav-bottom-right{   
+            >li{
+                padding: 0;
+                background-color: rgba(0,0,0,0.3);
+                line-height: 50px;      
+                    >a{
+                        color: #fff;
+                        height: 20px;
+                        font-size: 14px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        border-right:1px  dashed #fff;
+                        &:hover{
+                            color: #f00;
+                        }
+                        >strong{
+                            text-align: center;
+                        }
+                        }
+                    }
+                }
+        }
+    }
+#carousel-example-generic{
+    >.carousel-inner{
+        >.item{
+            >a{
+            >p{
+                line-height:50px;
+                font-size:16px ;
+                text-align: center;
+            }
+            }
+        }
+    }
+    .carousel-control.left { 
+
+        background-image:none; 
+        background-repeat: repeat-x; 
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); 
+        } 
+    .carousel-control.right { 
+        left: auto; 
+        right: 0; 
+        
+        background-image:none; 
+        background-repeat: repeat-x; 
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); 
+        } 
+}
+.car-two{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    a{
+        img{
+            width: 100%;
+        }
+    }
+}
+#carousel-generic{
+    >.carousel-indicators{
+        bottom: -40px;
+        >li{
+            background-color: #aaa;
+        }
+        >.active{
+            background-color: #000;
+        }
+    }
+    .clg{
+        color: black;
+        font-size:30px;
+    }
+    .carousel-control.left { 
+
+        background-image:none; 
+        background-repeat: repeat-x; 
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1); 
+        } 
+    .carousel-control.right { 
+        left: auto; 
+        right: 0; 
+        
+        background-image:none; 
+        background-repeat: repeat-x; 
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1); 
+        } 
+
+}
+.cont-one{
+    padding-top: 40px;
+    overflow: hidden;
+    >div{     
+        height: 40px;
+        margin: 10px;
+        border: 1px solid black;
+        >a{
+            font-size: 16px;
+            line-height: 40px;           
+        }
+    }
+}
+.pan{
+    padding-top: 10px;
+    padding-bottom:10px ;
+    img{
+        padding-top: 10px;
+        padding-bottom:10px ;
+        width:100%;
+    }
+}
+.menu-one{
+    .container{
+        a{
+            font-size: 18px;
+            color: #aaa;
+            &:hover{
+                color: #000;
+                background: none;
+                border:none;
+            }
+        }
+        .active{
+            box-sizing: border-box;
+            background: none;
+           border-bottom: 2px solid #00f;
+
+           >a{ 
+               border:transparent !important;
+               &:hover{
+                border:transparent;
+               }
+               &:visited{
+                border:transparent;
+               }
+           }
+        }
+    }
+}
+.ann{
+    padding: 10px;
+    border-bottom: 1px solid #dadada;
+    margin-top:10px ;
+    margin-bottom: 40px;
+}
+.foot-img{
+    padding-top: 40px;
+    padding-bottom:50px ;
+    img{
+        width: 100%;
+    }
+}
+footer{
+    >.container{
+        padding-top: 20px; 
+        position: relative;
+        >a{
+            position: absolute; 
+            z-index: 5;
+        }            
+            >.col-lg-3{ 
+                height: 51px;
+                padding-top:12.5px ;
+                padding-bottom:12.5px ;
+                background-color: rgb(0,0,0);
+                >p{
+                    height: 25px;
+                    line-height: 25px;
+                    border-right:1px  dashed gainsboro;
+                    >a{
+                        color: #fff;
+                        &:hover{
+                            color: #f00;
+                        }
+                    }
+                }
+            }
+       
+    }
+}
