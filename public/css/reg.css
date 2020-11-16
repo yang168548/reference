@@ -1,0 +1,64 @@
+.reg {
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+.reg .h3 {
+  padding: 15px;
+  padding-left: 5px ;
+  background-color: #eee;
+}
+.reg .col-lg-6 {
+  margin-top: 20px;
+}
+.reg .col-lg-6 #phone {
+  padding: 0  20px ;
+}
+.reg .col-lg-6 #yanzheng {
+  padding: 0 20px;
+}
+.reg .col-lg-6 .form-control {
+  margin: 10px 0;
+  margin-bottom: 20px;
+  color: #ccc;
+  margin-left: 8px;
+  position: relative;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+}
+.reg .col-lg-6 .form-control select {
+  width: 100%;
+  height: 30px;
+  color: #000;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #000;
+  outline: none ;
+}
+.reg .col-lg-6 .form-control input {
+  width: 80%;
+  box-shadow: 0 0 0 0 #fff;
+  border: transparent ;
+  outline: none ;
+}
+.reg .col-lg-6 .form-control span {
+  border: none;
+  padding: 3px;
+}
+/* div{ 
+                        
+    color:#ccc; 
+    margin-left: 8px;
+    position: relative;
+    border:1px solid transparent;
+    border-bottom:1px solid  black;  
+    input{
+        width: 200px;
+        border:transparent;
+        outline:none;//去掉焦点边框
+    }
+    span{
+        padding: 0;
+        border:none;
+       
+    }
+}    */

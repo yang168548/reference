@@ -4,17 +4,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>注册</title>
     <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/nav.css">
+    <link rel="stylesheet" href="../css/reg.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <script src="../js/reg.js" type="module"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="text-center h1">注册页面</div>
+    <nav class="container-fluid ">
+        <div id="" class="container">
+            <div class="col-lg-9 col-md-offset-3">
+                <ul class="clear">
+                    <li>
+                        <a href="./reg.html"><span>注册</span></a>
+                    </li>
+                    <li>
+                        <a href="./login.html"><span>登录</span></a>
+                    </li>
+                    <li>
+                        <a href="./detailpage.html"> <span class="glyphicon glyphicon-user"><p>账户</p> </span></a>
+                    </li>
+                    <li>
+                        <a href=""> <span class="glyphicon glyphicon-heart"><p>收藏夹</p></span></a>
+                    </li>
+                    <li>
+                        <a href="./shopcar.html"><span class="glyphicon glyphicon-shopping-cart"><p>购物车</p><span class="glyphicon glyphicon-menu-down"></span> </span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-envelope"><p>站内信</p></span></a>
+                    </li>
+                    <li>
+                        <a href=""><span class="glyphicon glyphicon-headphones"><p>联系客服</p></span></a>
+                    </li>
+                    <li>
+                        <span class="glyphicon glyphicon-home"><p>门店购买</p>
+                            <div class="title">
+                                <span></span>
+                        <div class="container">
+                            <br>
+                            <p>门店急送等服务仅支持手机端购买，欢迎扫码体验!</p>
+                            <div class="col-lg-6">
+                                <img src="../images/app-download.png" alt="">
+                                <br><br>
+                                <p>优衣库APP下载</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="../images/wx-download.png" alt="">
+                                <br><br>
+                                <p>优衣库小程序登录</p>
+                            </div>
+
+                        </div>
+            </div>
+            </span>
+            </li>
+            <li>
+                <div>
+                    <span class="glyphicon glyphicon-search"></span>
+                    <input type="text" placeholder="站内搜索">
+                </div>
+            </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <div class="container" id="nav-bottom">
+        <div class="pull-left">
+            <a href=""><img src="../images/LOGO.gif" alt=""></a>
+        </div>
+        <div class="nav-bottom-left clear">
+            <ul class="clear pull-left">
+                <li class="pull-left">
+                    <p><a href=""><span>女装</span>WOMEN</a> </p>
+                </li>
+                <li class="pull-left">
+                    <p><a href=""><span>男装</span>MEN</a> </p>
+
+                </li>
+                <li class="pull-left">
+                    <p><a href=""><span>童装</span>kids</a> </p>
+                </li>
+                <li class="pull-left">
+                    <p><a href=""><span>婴幼儿装</span>baby</a> </p>
+                </li>
+            </ul>
+            <ul class="nav-bottom-right pull-right clear">
+                <li class="pull-left">
+                    <a href="#"><strong>网上购买指南</strong></a>
+                </li>
+                <li class="pull-left">
+                    <a href="#"><strong>关注我们</strong></a>
+                </li>
+                <li class="pull-left">
+                    <a href="#" style=" border:none; padding-left: 20px; padding-right: 20px;"><strong>公告区</strong></a>
+                </li>
+                <li class="pull-left" style="  background-color: rgba(0,0,0,0.7);">
+                    <a href="#" style=" border:none;"><strong>店铺资料</strong></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--  -->
+    <div class="container reg">
+        <div class="row h3 ">新用户注册</div>
 
 
-        <div class="input-group">
+        <!--  <div class="input-group">
             <span class="input-group-addon" id="username">username</span>
             <input type="text" class="form-control" placeholder="Username" aria-describedby="username" name="username">
         </div>
@@ -26,18 +123,75 @@
             <span class="input-group-addon" id="email">email</span>
             <input type="text" class="form-control" placeholder="email" aria-describedby="email" name="email">
         </div>
-        <div class="input-group">
-            <span class="input-group-addon" id="phone">phone</span>
-            <input type="text" class="form-control" placeholder="phone" aria-describedby="phone" name="phone">
-        </div>
+        <div class="input-group"> -->
+
+        <!--</div>
         <div class="input-group">
             <span class="input-group-addon" id="address">address</span>
             <input type="text" class="form-control" placeholder="address" aria-describedby="address" name="address">
+        </div> -->
+
+        <div class="col-lg-6 container col-md-offset-3">
+            <div class=" form-control" style="border-bottom:none;">
+                <select>
+                <option>中国大陆 <span>+86</span></option>
+                <option>中国香港特别行政区 <span>+852</span></option>
+            </select>
+            </div>
+            <span id="phone">手机号</span>
+            <div class=" form-control">
+                <span class="glyphicon glyphicon-user pull-left "></span>
+                <input type="text" class="" aria-describedby="phone" name="phone" placeholder="手机号">
+            </div>
+            <span id="yanzheng">验证码</span>
+            <div class=" form-control">
+                <input type="text" class="" aria-describedby="yanzheng" name="yanzheng" placeholder="验证码">
+                <span>验证码</span>
+            </div>
+            <div style="border-bottom:none; margin: 10px;">
+                <input type="checkbox" name="like" value=""><span>我已阅读并同意 <a href="#" style="color: #09f;">《优衣库会员注册协议》</a> 和 <a href="#" style="color: #09f;">《优衣库隐私政策》</a>  </span>
+            </div>
+            <input type="button" class="form-control" value="注册" id="submit" class="btn btn-success" style="border:none ; margin: 10px;background:#ccc; color: #fff;">
         </div>
-
-        <input type="button" value="提交" id="submit" class="btn btn-success btn-block">
-
     </div>
+    <!--  -->
+    <footer>
+        <div class="container ">
+            <a href="# " class="pull-left "><img src="../images/LOGO.gif " alt=" " style="width:100%; "></a>
+            <div class="col-lg-3 text-center " style="padding-left:50px; ">
+                <p>
+                    <a href="# ">店铺资料</a>
+                </p>
+            </div>
+            <div class="col-lg-3 text-center ">
+                <p>
+                    <a href="# ">招聘信息</a>
+                </p>
+            </div>
+            <div class="col-lg-3 text-center ">
+                <p>
+                    <a href="# ">访问权限</a>
+                </p>
+            </div>
+            <div class="col-lg-3 text-center ">
+                <p style="border:none; ">
+                    <a href="# ">隐私保护</a>
+                </p>
+            </div>
+
+        </div>
+        <div class="container " style="padding-bottom:2px; position: relative;">
+            <p style="position: absolute; bottom: 0px; color: #ccc;font-size: 12px;">迅销（中国）商贸有限公司 沪ICP备09003223号 <img src="./images/national.png" alt=""> 沪公网安备 31010402000957号 </p>
+            <div class="pull-right ">
+                <img src="../images/ae70496c8d3e7e510f422c7a8c54b860.png " alt=" ">
+            </div>
+            <div class="pull-right " style="padding-top:45px;padding-right:2px; ">
+                <img src="../images/lz2.jpg " alt=" ">
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
 
 </html>

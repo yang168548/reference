@@ -1,0 +1,145 @@
+a {
+  text-decoration: none ;
+  color: black ;
+}
+a:hover {
+  text-decoration: none ;
+  color: black;
+}
+a:visited {
+  text-decoration: none ;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+nav {
+  padding: 5px;
+}
+nav > div > div > ul {
+  font-size: 12px;
+  padding-top: 10px;
+  height: 30px;
+}
+nav > div > div > ul > li {
+  float: left;
+}
+nav > div > div > ul > li span {
+  height: 15px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-right: 1px  dashed gainsboro;
+}
+nav > div > div > ul > li span p {
+  display: inline-block;
+  padding-left: 3px ;
+}
+nav > div > div > ul > li span span {
+  padding: 0;
+  padding-left: 3px ;
+  border: none;
+}
+nav > div > div > ul > li:nth-last-of-type(2):hover .title {
+  display: block;
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title {
+  display: none;
+  float: right;
+  width: 350px;
+  margin-right: 5% ;
+  color: black;
+  top: 25px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 5;
+  /*   background-color: yellowgreen; */
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title > span {
+  position: absolute;
+  border-left: 8px  solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #ddd;
+  top: -14px;
+  left: 20px;
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title div {
+  box-sizing: border-box;
+  width: 330px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title div p {
+  text-align: center;
+  font-size: 12px;
+  padding-left: 5px;
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title div div {
+  border: none;
+  width: 140px;
+  margin: 5px;
+}
+nav > div > div > ul > li:nth-last-of-type(2) .title div div img {
+  width: 100%;
+}
+nav > div > div > ul > li > div {
+  color: #ccc;
+  margin-left: 8px;
+  position: relative;
+  border: 1px solid transparent;
+  border-bottom: 1px solid  black;
+}
+nav > div > div > ul > li > div input {
+  width: 200px;
+  border: transparent;
+  outline: none;
+}
+nav > div > div > ul > li > div span {
+  padding: 0;
+  border: none;
+}
+#nav-bottom > .nav-bottom-left > ul {
+  padding: 5px;
+  padding-left: 10px ;
+}
+#nav-bottom > .nav-bottom-left > ul > li {
+  line-height: 50px;
+  padding-right: 10px;
+}
+#nav-bottom > .nav-bottom-left > ul > li p > a {
+  font-size: 14px;
+  text-align: center;
+  height: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-right: 1px dashed #000;
+}
+#nav-bottom > .nav-bottom-left > ul > li p > a > span {
+  letter-spacing: 5px;
+}
+#nav-bottom > .nav-bottom-left > .nav-bottom-right > li {
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  line-height: 50px;
+}
+#nav-bottom > .nav-bottom-left > .nav-bottom-right > li > a {
+  color: #fff;
+  height: 20px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-right: 1px dashed #fff;
+}
+#nav-bottom > .nav-bottom-left > .nav-bottom-right > li > a:hover {
+  color: #f00;
+}
+#nav-bottom > .nav-bottom-left > .nav-bottom-right > li > a > strong {
+  text-align: center;
+}

@@ -1,0 +1,52 @@
+a{ 
+    text-decoration:none ;
+    color: black ;
+}
+a:hover{
+    text-decoration:none ;
+    color: black;
+}
+a:visited{
+    text-decoration:none ;
+    color: black;         
+}
+ul{
+    list-style: none;
+}
+
+.clear::after{
+    content:"";
+    clear:both;
+    display:block;
+    height:0;
+    overflow:hidden;
+    visibility:hidden;
+}
+footer{
+    >.container{
+        padding-top: 20px; 
+        position: relative;
+        >a{
+            position: absolute; 
+            z-index: 5;
+        }            
+            >.col-lg-3{ 
+                height: 51px;
+                padding-top:12.5px ;
+                padding-bottom:12.5px ;
+                background-color: rgb(0,0,0);
+                >p{
+                    height: 25px;
+                    line-height: 25px;
+                    border-right:1px  dashed gainsboro;
+                    >a{
+                        color: #fff;
+                        &:hover{
+                            color: #f00;
+                        }
+                    }
+                }
+            }
+       
+    }
+}

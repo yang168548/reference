@@ -1,0 +1,48 @@
+a {
+  text-decoration: none ;
+  color: black ;
+}
+a:hover {
+  text-decoration: none ;
+  color: black;
+}
+a:visited {
+  text-decoration: none ;
+  color: black;
+}
+ul {
+  list-style: none;
+}
+.clear::after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+footer > .container {
+  padding-top: 20px;
+  position: relative;
+}
+footer > .container > a {
+  position: absolute;
+  z-index: 5;
+}
+footer > .container > .col-lg-3 {
+  height: 51px;
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  background-color: #000000;
+}
+footer > .container > .col-lg-3 > p {
+  height: 25px;
+  line-height: 25px;
+  border-right: 1px  dashed gainsboro;
+}
+footer > .container > .col-lg-3 > p > a {
+  color: #fff;
+}
+footer > .container > .col-lg-3 > p > a:hover {
+  color: #f00;
+}
